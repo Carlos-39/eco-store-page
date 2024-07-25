@@ -1,4 +1,18 @@
-body {
-	background-color: red;
-	font-family: 'Courier New', Courier, monospace;
+// Creación de variables
+$primary-color_cream: #FFEFE7;
+$secondary-color_bold-cream: #FFDAC6;
+$tertiary-color_green-light: #BABD8D;
+$primary-text-color_bold-green: #7C6A0A;
+$font-family: "IBM Plex Sans", sans-serif;
+
+// estilos base de los contenedores
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+	font-family: $font-family;
 }
