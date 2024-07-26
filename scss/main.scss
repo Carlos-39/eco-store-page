@@ -23,7 +23,7 @@ nav {
 	width: 100%;
 	min-width: 320px;
 	height: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -56,6 +56,94 @@ nav {
 main {
 	width: 100%;
 	height: auto;
+
+	// 1ra sección
+	.main-section-container{
+		width: 80%;
+		min-width: 288px;
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: 40px;
+
+		.main-section-right{
+			width: 100%;
+			height: 390px;
+			background-image: url(../assets/img/main-2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			border-radius: 8px;
+			margin-bottom: 14px;
+		}
+
+		.main-section-left{
+			color: $primary-text-color_bold-green;
+
+			.section-left--title{
+				font-size: 2.4rem;
+				line-height: 2rem;
+				margin-bottom: 20px;
+				font-weight: bold;
+			}
+
+			.section-left--info{
+				font-size: 1.2rem;
+				line-height: 1.6rem;
+				margin-bottom: 20px;
+			}
+
+			.section-left--button{
+				position: relative;
+				display: flex;
+				width: 130px;
+				height: 40px;
+				left: calc(50% - 73px);
+				align-items: center;
+				justify-content: center;
+				background-color: #FA9500;
+				border-radius: 20px;
+				color: #ffffff;
+				font-size: 1.2rem;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+
+		@media (min-width: 768px) {
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			display: flex;
+			gap: 50px;
+			
+
+			.main-section-right{
+				width: 50%;
+				height: 80vh;
+				order: 2;
+			}
+
+			.main-section-left{
+				width: 50%;
+				order: 1;
+				padding: 20px;
+
+				.section-left--title{
+					font-size: 3rem;
+					margin-bottom: 60px;
+				}
+
+				.section-left--info{
+					margin-bottom: 60px;
+					font-size: 1.45rem;
+				}
+
+				.section-left--button{
+					left: 0;
+				}
+			}
+		}
+	}
 }
 
 // Estilos de la sección footer
