@@ -369,6 +369,61 @@ main .main-product-section .furniture-container .products-card-container .card-s
 main .main-product-section .furniture-container .products-card-container .card-section .card-info-container .card-info--info {
   color: #ffffff;
 }
+main .main-info-section {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+}
+main .main-info-section .info-section--aboutUs {
+  width: 80%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+main .main-info-section .info-section--aboutUs .aboutUs-title {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #7C6A0A;
+  margin-bottom: 40px;
+}
+main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-left, main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-right {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-left img, main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-right img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 16px;
+}
+main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-left p, main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-right p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: #E86424;
+}
+@media (min-width: 768px) {
+  main .main-info-section .info-section--aboutUs .aboutUs-imgs-container {
+    display: flex;
+    gap: 60px;
+  }
+}
+@media (min-width: 768px) {
+  main .main-info-section .info-section--aboutUs .aboutUs-title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .main-info-section .info-section--aboutUs .aboutUs-title {
+    font-size: 2.4rem;
+  }
+  main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-left p, main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-right p {
+    font-size: 1.45rem;
+  }
+}
 
 footer {
   background-color: #FA9500;

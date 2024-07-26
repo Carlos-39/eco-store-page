@@ -336,6 +336,76 @@ main {
 			}
 		}
 	}
+
+	//3ra sección -> about Us
+	.main-info-section{
+		width: 100%;
+		min-width: 320px;
+		height: auto;
+
+		.info-section--aboutUs{
+			width: 80%;
+			min-width: 288px;
+			height: auto;
+			margin: 0 auto;
+			margin-bottom: 30px;
+
+			.aboutUs-title{
+				font-size: 1.6rem;
+				line-height: 1.8rem;
+				font-weight: 500;
+				color: $primary-text-color_bold-green;
+				margin-bottom: 40px;
+			}
+
+			.aboutUs-imgs-container{
+				.aboutUs-left{
+					width: 70%;
+					margin: 0 auto;
+					margin-bottom: 30px;
+					text-align: center;
+	
+					img{
+						height: 80px;
+						width: 80px;
+						margin-bottom: 16px;
+					}
+	
+					p{
+						font-size: 1.2rem;
+						font-weight: 600;
+						line-height: 1.6rem;
+						color: #E86424;
+					}
+				}
+	
+				.aboutUs-right{
+					@extend .aboutUs-left;
+				}
+
+				@media (min-width:768px){
+					display: flex;
+					gap: 60px;
+				}
+			}
+
+			@media (min-width:768px){
+				.aboutUs-title{
+					font-size: 2rem;
+				}
+			}
+
+			@media (min-width:1024px){
+				.aboutUs-title{
+					font-size: 2.4rem;
+				}
+
+				.aboutUs-imgs-container .aboutUs-left p{
+					font-size: 1.45rem;
+				}
+			}
+		}
+	}
 }
 
 // Estilos de la sección footer
