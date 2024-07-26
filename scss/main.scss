@@ -73,7 +73,7 @@ main {
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
-			border-radius: 8px;
+			border-radius: 15px;
 			margin-bottom: 16px;
 		}
 
@@ -141,6 +141,197 @@ main {
 
 				.section-left--button{
 					left: 0;
+				}
+			}
+		}
+	}
+
+	// 2da sección -> productos
+	.main-product-section{
+		width: 100%;
+		min-width: 320px;
+		height: auto;
+
+		@mixin shared-container{
+			width: 80%;
+			min-width: 288px;
+			height: auto;
+			margin: 0 auto;
+			margin-bottom: 40px;
+
+			.products-title{
+				font-size: 1.6rem;
+				line-height: 1.8rem;
+				font-weight: 500;
+				color: $primary-text-color_bold-green;
+				margin-bottom: 20px;
+			}
+
+			.products-card-container{
+
+				.card-section{
+					width: 75%;
+					height: 340px;
+					margin: 0 auto;
+					margin-bottom: 20px;
+					padding: 8px;
+					background-color: $secondary-color_bold-cream;
+					border-radius: 8px;
+
+					.card-button{
+						position: relative;
+						left: calc(100% - 16px);
+						height: 16px;
+						width: 16px;
+						background: none;
+						border: none;
+						cursor: pointer;
+
+						img{
+							height: 16px;
+							width: 16px;
+						}
+					}
+
+					.card-img{
+						width: 90%;
+						height: 216px;
+						margin: 0 auto;
+						margin-bottom: 10px;
+						background-image: url(../assets/img/products/toothbrush.jpg);
+						background-repeat: no-repeat;
+						background-size: cover;
+						background-position: center;
+						border-radius: 5px;
+					}
+
+					.hand-cream {
+						background-image: url(../assets/img/products/hand-cream.jpeg);
+					}
+
+					.serum-hidratante{
+						background-image: url(../assets/img/products/serum.jpg);
+					}
+
+					.travel-kit{
+						background-image: url(../assets/img/products/organic-kit.jpg);
+					}
+
+					.soap-set{
+						background-image: url(../assets/img/products/organic-soap.jpg);
+					}
+
+					.skincare-kit{
+						background-image: url(../assets/img/products/guasha-kit.jpg);
+					}
+
+					.card-info-container{
+						width: 90%;
+						height: 70px;
+						margin: 0 auto;
+
+						.card-info--title{
+							font-size: 1.6rem;
+							font-weight: 450;
+							line-height: 1.8rem;
+							margin-bottom: 5px;
+							color: $primary-text-color_bold-green;
+						}
+
+						.card-info--info{
+							font-size: 1.2rem;
+							line-height: 1.4rem;
+							color: $primary-text-color_bold-green;
+						}
+					}
+				}
+
+				@media (min-width: 768px) {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+
+					.card-section{
+						width: 35%;
+					}
+				}
+
+				@media (min-width: 1024px) {
+					.card-section{
+						width: 26%;
+					}
+				}
+			}
+
+			@media (min-width: 768px) {
+				.products-title{
+					font-size: 2rem
+				}
+			}
+
+			@media (min-width: 1024px) {
+				.products-title{
+					font-size: 2.4rem
+				}
+			}
+		}
+
+		.products-container {
+			@include shared-container
+		}
+
+		.furniture-container{
+			@include shared-container;
+
+			.products-card-container{
+				.card-section{
+					background-color: $tertiary-color_green-light;
+
+					.card-img{
+						background-image: url(../assets/img/furniture/wood-chair.jpg);
+					}
+
+					.banco{
+						background-image: url(../assets/img/furniture/small-table.jpeg);
+					}
+
+					.buro{
+						background-image: url(../assets/img/furniture/stand-table.jpg);
+					}
+
+					.mueble{
+						background-image: url(../assets/img/furniture/mueble.jpg);
+					}
+
+					.mirror{
+						background-image: url(../assets/img/furniture/mirror.jpg);
+					}
+
+					.desk-lamp{
+						background-image: url(../assets/img/furniture/desk-lamp.jpg);
+					}
+
+					.stand{
+						background-image: url(../assets/img/furniture/stand.jpg);
+					}
+
+					.mini-table{
+						background-image: url(../assets/img/furniture/mini-table.jpg);
+					}
+
+					.table{
+						background-image: url(../assets/img/furniture/table.jpg);
+					}
+
+					.card-info-container{
+						.card-info--title{
+							color: #ffffff;
+						}
+
+						.card-info--info{
+							color: #ffffff;
+						}
+					}
 				}
 			}
 		}
