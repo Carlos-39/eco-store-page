@@ -15,4 +15,25 @@ $font-family: "IBM Plex Sans", sans-serif;
 html{
 	font-size: 62.5%;
 	font-family: $font-family;
+	background-color: $primary-color_cream;
+}
+
+// estilos de la sección navbar
+nav {
+	width: 100%;
+	height: 100px;
+}
+
+// Estilos de la sección main
+main {
+	width: 100%;
+	height: auto;
+}
+
+// Estilos de la sección footer
+footer {
+	$background-color: #FA9500;
+	background-color: $background-color;
+	width: 100%;
+	height: 250px;
 }
