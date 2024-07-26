@@ -2,6 +2,7 @@
 $primary-color_cream: #FFEFE7;
 $secondary-color_bold-cream: #FFDAC6;
 $tertiary-color_green-light: #BABD8D;
+$quaternary-color_orange: #FA9500;
 $primary-text-color_bold-green: #7C6A0A;
 $font-family: "IBM Plex Sans", sans-serif;
 
@@ -73,7 +74,7 @@ main {
 			background-size: cover;
 			background-position: center;
 			border-radius: 8px;
-			margin-bottom: 14px;
+			margin-bottom: 16px;
 		}
 
 		.main-section-left{
@@ -100,7 +101,7 @@ main {
 				left: calc(50% - 73px);
 				align-items: center;
 				justify-content: center;
-				background-color: #FA9500;
+				background-color: $quaternary-color_orange;
 				border-radius: 20px;
 				color: #ffffff;
 				font-size: 1.2rem;
@@ -112,7 +113,7 @@ main {
 		@media (min-width: 768px) {
 			width: 90%;
 			margin: 0 auto;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			display: flex;
 			gap: 50px;
 			

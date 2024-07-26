@@ -59,7 +59,7 @@ main .main-section-container .main-section-right {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 main .main-section-container .main-section-left {
   color: #7C6A0A;
@@ -94,7 +94,7 @@ main .main-section-container .main-section-left .section-left--button {
   main .main-section-container {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     gap: 50px;
   }
