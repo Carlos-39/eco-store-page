@@ -408,7 +408,19 @@ main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-
 @media (min-width: 768px) {
   main .main-info-section .info-section--aboutUs .aboutUs-imgs-container {
     display: flex;
-    gap: 60px;
+    gap: 80px;
+    padding: 0 60px;
+    padding-top: 30px;
+  }
+  main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-left, main .main-info-section .info-section--aboutUs .aboutUs-imgs-container .aboutUs-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  main .main-info-section .info-section--aboutUs .aboutUs-imgs-container {
+    gap: 150px;
   }
 }
 @media (min-width: 768px) {
@@ -461,6 +473,10 @@ main .main-info-section .info-section-gallery .photos-container .gallery-photo i
   height: 230px;
   border-radius: 10px;
 }
+main .main-info-section .info-section-gallery .photos-container .gallery-photo img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
 @media (min-width: 768px) {
   main .main-info-section .info-section-gallery .photos-container {
     display: flex;
@@ -499,12 +515,12 @@ main .main-info-section .info-section--location .location-title {
 }
 main .main-info-section .info-section--location .location-img {
   width: 100%;
-  height: 350px;
+  height: 220px;
   margin-bottom: 20px;
 }
 main .main-info-section .info-section--location .location-img img {
   width: 100%;
-  height: 350px;
+  height: 220px;
 }
 main .main-info-section .info-section--location .location-info .location-info-title {
   font-size: 1.6rem;
@@ -525,15 +541,61 @@ main .main-info-section .info-section--location .location-info .location-info-p 
   main .main-info-section .info-section--location .location-title {
     font-size: 2rem;
   }
+  main .main-info-section .info-section--location .location-img {
+    padding: 0 60px;
+  }
 }
 @media (min-width: 1024px) {
   main .main-info-section .info-section--location .location-title {
     font-size: 2.4rem;
+  }
+  main .main-info-section .info-section--location .location-img {
+    height: 350px;
+  }
+  main .main-info-section .info-section--location .location-img img {
+    width: 100%;
+    height: 350px;
   }
 }
 
 footer {
   background-color: #FA9500;
   width: 100%;
-  height: 250px;
+  height: 200px;
+  padding: 20px;
+}
+footer .footer-title {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+footer .footer-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+footer .footer-info-container p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+}
+footer .footer-socialMedia-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+footer .footer-socialMedia-container img {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  footer .footer-socialMedia-container {
+    justify-content: center;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
