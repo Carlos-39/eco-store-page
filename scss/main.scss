@@ -351,7 +351,7 @@ main {
 		line-height: 1.8rem;
 		font-weight: 500;
 		color: $primary-text-color_bold-green;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
 	.main-info-section{
@@ -466,6 +466,53 @@ main {
 
 			@media(min-width: 1024px){
 				.gallery-title{
+					font-size: 2.4rem;
+				}
+			}
+		}
+
+		.info-section--location{
+			@include info-section-container;
+			margin-bottom: 50px;
+
+			.location-title{
+				@include info-section-title;
+			}
+
+			.location-img{
+				width: 100%;
+				height: 350px;
+				margin-bottom: 20px;
+
+				img{
+					width: 100%;
+					height: 350px;
+				}
+			}
+
+			.location-info{
+				.location-info-title{
+					@include info-section-title;
+					margin-bottom: 20px;
+					color: $quaternary-color_orange;
+					font-weight: 600;
+				}
+
+				.location-info-p{
+					font-size: 1.2rem;
+					line-height: 1.8rem;
+					color: $quaternary-color_orange;
+				}
+			}
+
+			@media(min-width: 768px){
+				.location-title{
+					font-size: 2rem;
+				}
+			}
+
+			@media(min-width: 1024px){
+				.location-title{
 					font-size: 2.4rem;
 				}
 			}
